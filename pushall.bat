@@ -1,9 +1,12 @@
 @echo off
-:: Este archivo agrega, comitea y hace push (empujar) de los cambios automáticamente
+:: Lee la versión desde el archivo docs\VERSION.md
+for /f "tokens=3" %%i in ('findstr /i "Versión actual:" docs\VERSION.md') do set version=%%i
 
-:: Solicita un mensaje (frase explicativa) para el commit
-set /p msg="Introduce el mensaje del commit: "
+:: Pide mensaje de commit personalizado
+set /p msg=Introduce el mensaje del commit: 
 
+:: Combina mensaje con versión
 git add .
-git commit -m "%msg%"
-git push
+git commit -m "[%version%] %msg%"
+git push origin main
+pause
