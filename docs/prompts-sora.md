@@ -1,3 +1,3 @@
 # prompts-sora.md
 
-Archivo temporal, listo para completar.
+Archivo temporal, completar según avance del proyecto.
