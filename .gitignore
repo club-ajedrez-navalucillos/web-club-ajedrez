@@ -1,0 +1,32 @@
+# ❌ EXCLUSIONES DE WORDPRESS CORE
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/sql_backup/
+wordpress/wp-config.php
+
+# ❌ ARCHIVOS DE LOGS Y TEMPORALES
+*.log
+*.sql
+*.zip
+*.tar.gz
+*.gz
+*.rar
+*.7z
+
+# ❌ SISTEMA Y EDITORES
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+.env
+.vscode/
+.idea/
+
+# ❌ ARCHIVOS DE LOCALWP
+app/sql/
+app/backups/
+*.wpress
+*.local
+*.bak
